@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Planilha de tarefas</h1>
+    <div id="itemList">
+        <h3>Escolha o tipo de tarefa que você deseja fazer hoje:</h3>
+        <div class="item" onclick="selectItem('Casa')">Casa</div>
+        <div class="item" onclick="selectItem('Estudo')">Estudo</div>
+        <div class="item" onclick="selectItem('Academia')">Academia</div>
+        <div class="item" onclick="selectItem('Trabalho')">Trabalho</div>
+        <div class="item" onclick="selectItem('Lazer')">Lazer</div>
+      </div>
+      <div class="p2">
+      <div id="taskList">
+        <h2>Tarefas Selecionadas</h2>
+        <ul id="selectedTasks"></ul>
+      </div>
+    
+      <!-- Campo de Adição de Tarefa -->
+      <div>
+        <label for="taskInput">Adicionar Tarefa:</label>
+        <input type="text" id="taskInput" placeholder="Digite sua tarefa">
+        <button onclick="addTask()">Adicionar</button>
+      </div>
+    </div>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
